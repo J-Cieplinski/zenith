@@ -16,7 +16,7 @@ const props: ComponentProps<typeof MainTemplate> = {
     pdf: {
       path: '/generated/pdf/template.pdf',
       label: 'Download resume',
-      filename: 'mark-freeman-resume.pdf',
+      filename: 'jakub-cieplinski-resume.pdf',
     },
   },
   metadata: 'main',
@@ -25,10 +25,7 @@ const props: ComponentProps<typeof MainTemplate> = {
     { sectionId: 'skills', icon: 'fa6-solid:bars-progress', text: 'Skills' },
     { sectionId: 'jobs', icon: 'fa6-solid:suitcase', text: 'Work experience' },
     { sectionId: 'projects', icon: 'fa6-solid:rocket', text: 'Projects' },
-    { sectionId: 'references', icon: 'fa6-solid:comment', text: 'References' },
-    { sectionId: 'achievements', icon: 'fa6-solid:trophy', text: 'Achievements' },
     { sectionId: 'education', icon: 'fa6-solid:graduation-cap', text: 'Education' },
-    { sectionId: 'favorites', icon: 'fa6-solid:star', text: 'Favorites' },
   ],
   basics: 'main',
   sections: [
@@ -40,96 +37,37 @@ const props: ComponentProps<typeof MainTemplate> = {
           title: 'Technologies',
           withLevel: true,
           // prettier-ignore
-          entries: ['astro', 'drizzle-orm', 'eslint', 'next', 'playwright', 'postgresql', 'react-testing-library', 'react', 'shadcn', 'tailwind', 'tanstack-query', 'trpc', 'typescript', 'vitest'],
+          entries: ['cpp', 'stl', 'python', 'linux', 'jira', 'project_management'],
         },
         {
           title: 'Tools',
-          entries: ['neon', 'sentry', 'stripe', 'vercel'],
+          entries: ['clion', 'vscode', 'gtest', 'cmake', 'git'],
         },
         {
           title: 'Languages',
-          entries: ['english', 'spanish'],
+          entries: ['polish', 'english'],
         },
       ],
     },
     {
       collection: 'jobs',
       title: 'Work',
-      entries: ['meta', 'shopify', 'codepen'],
+      entries: ['nokia', 'huuugegames'],
     },
     {
       collection: 'projects',
       title: 'Projects',
-      entries: ['moni-buddy', 'user-board'],
-    },
-    {
-      collection: 'references',
-      title: 'References',
-      entries: ['jane-smith', 'john-doe'],
-    },
-    {
-      collection: 'achievements',
-      title: 'Achievements',
-      entries: [
-        'advanced-react-developer',
-        'google-developer-expert',
-        'reactathon-hackathon',
-        'redux-toolkit-contributor',
-      ],
+      entries: ['taskplanner', 'spielda'],
     },
     {
       collection: 'education',
       title: 'Education',
-      entries: ['master', 'bachelor'],
-    },
-    {
-      collection: 'favorites',
-      title: 'Favorites',
-      subsections: [
-        {
-          title: 'Books I read',
-          image: 'poster',
-          entries: [
-            'books/domain-driven-design',
-            'books/grokkking-simplicity',
-            'books/learning-javascript-design-patterns',
-            'books/the-pragmatic-programmer',
-          ],
-        },
-        {
-          title: 'Articles I come back to',
-          withSource: true,
-          image: 'favicon',
-          entries: [
-            'articles/client-side-architecture-basics',
-            'articles/future-facing-frontend-architectures',
-            'articles/practical-react-query',
-            'articles/the-least-worst-architecture',
-          ],
-        },
-        {
-          title: 'Videos I watched',
-          image: 'video',
-          entries: ['videos/mind-the-gap', 'videos/monads', 'videos/principled-coders', 'videos/scaling-yourself'],
-        },
-        {
-          title: 'People I learn from',
-          image: 'person',
-          entries: [
-            'people/addy-osmani',
-            'people/anthony-fu',
-            'people/dan-abramov',
-            'people/josh-w-comeau',
-            'people/kent-c-dodds',
-            'people/lee-robinson',
-          ],
-        },
-      ],
+      entries: ['bachelor'],
     },
     {
       collection: 'interests',
       title: 'Interests',
-      entries: ['cooking', 'running', 'technical-blogging', 'video-montage'],
+      entries: ['cooking', 'homelabbing', 'gaming', 'gamedev'],
     },
   ],
 };
